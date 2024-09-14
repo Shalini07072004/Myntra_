@@ -1,0 +1,126 @@
+.product-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    margin: 20px auto;
+    gap: 20px;
+  }
+  
+  .left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .image-thumbnails {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .image-thumbnails img {
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 5px;
+  }
+  
+  .image-thumbnails img.selected-thumbnail {
+    border: 2px solid #3498db;
+  }
+  
+  .right-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .product-title {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .price-details .original-price {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .price-details .discounted-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e74c3c;
+  }
+  
+  .selected {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .size-selection button,
+.color-selection button {
+  margin-right: 5px; /* Decrease the space between buttons */
+  padding: 6px 10px; /* Smaller padding */
+  font-size: 12px; /* Smaller font size */
+  border-radius: 4px; /* Slightly smaller border radius for a more compact look */
+  border: 1px solid #ddd; /* Add a subtle border for better visibility */
+  width:50px;
+}
+
+.size-selection button.selected,
+.color-selection button.selected {
+  background-color: #3498db;
+  color: white;
+}
+
+  
+  .add-to-cart,
+  .buy-now {
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .add-to-cart {
+    background-color: #3498db;
+  }
+  
+  .buy-now {
+    background-color: #e74c3c;
+  }
+  
+  .purchase-options {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .product-description,
+  .delivery-info,
+  .offers,
+  .return-policy,
+  .seller-info {
+    margin-bottom: 15px;
+  }
+  
+  .recommendations ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .recommendations li {
+    margin-bottom: 10px;
+  }
+  
